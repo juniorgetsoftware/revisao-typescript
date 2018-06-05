@@ -1,0 +1,17 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8" />
+    <script >
+        const resposta = fetch('http://api.postmon.com.br/v1/cep/62940000');
+        resposta
+            .then(dado => dado.json())
+            .then(dado => console.log(dado))
+            .catch(erro => console.log(erro)
+            );
+    </script>
+</head>
+<body>
+    
+</body>
+</html>
